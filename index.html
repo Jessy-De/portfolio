@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jessica's Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        overflow: hidden;
+      }
+      nav ul li {
+        float: left;
+      }
+      nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav ul li a:hover {
+        background-color: #111;
+      }
+      section {
+        padding: 20px;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      form label,
+      form input,
+      form textarea {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <h1>Welcome to My Portfolio</h1>
+      <p>This is where you can learn more about me and my work!</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Jessica Muthoni, a passionate developer. I love building web
+        applications and learning new technologies.
+      </p>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+      <h2>My Work</h2>
+      <ul>
+        <li>
+          Project 1: A dynamic website built with HTML, CSS, and JavaScript.
+        </li>
+        <li>Project 2: A responsive web app created using React.</li>
+      </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+      <h2>My Resume</h2>
+      <p>You can download my resume <a href="resume.pdf" download>here</a>.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send" />
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Jessica Muthoni. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
